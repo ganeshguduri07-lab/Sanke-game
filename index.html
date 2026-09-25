@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="game-container">
+
+    <h1>🐍 Snake Game</h1>
+
+    <div class="score-box">
+        <div>
+            <span>Score</span>
+            <strong id="score">0</strong>
+        </div>
+
+        <div>
+            <span>High Score</span>
+            <strong id="highScore">0</strong>
+        </div>
+    </div>
+
+    <div class="game-area">
+
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+        <!-- Start Screen -->
+        <div id="startScreen" class="overlay">
+            <h2>🐍 Snake Game</h2>
+            <p>Ready to play?</p>
+            <button id="startBtn">▶ Start Game</button>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div id="gameOverScreen" class="overlay hidden">
+            <h2>💀 Game Over</h2>
+            <p>Your Score</p>
+            <strong id="finalScore">0</strong>
+<p id="newHighScore" class="new-high-score hidden">
+    🏆 NEW HIGH SCORE!
+</p>
+            <button id="playAgainBtn">🔄 Play Again</button>
+        </div>
+
+    </div>
+
+    <div class="buttons">
+        <button id="pauseBtn">⏸ Pause</button>
+        <button id="restartBtn">🔄 Restart</button>
+    </div>
+<div class="mobile-controls">
+    <button data-direction="UP">⬆️</button>
+
+    <div>
+        <button data-direction="LEFT">⬅️</button>
+        <button data-direction="DOWN">⬇️</button>
+        <button data-direction="RIGHT">➡️</button>
+    </div>
+</div>
+    <p class="controls">
+        Use ⬆️ ⬇️ ⬅️ ➡️ to move
+    </p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
