@@ -698,3 +698,18 @@ startBtn.addEventListener(
     "click",
     startGame
 );
+const difficultyButtons =
+    document.querySelectorAll(".difficulty button");
+
+difficultyButtons.forEach(button => {
+    button.addEventListener("click", () => {
+
+        gameSpeed = Number(button.dataset.speed);
+
+        if (gameRunning) {
+            clearInterval(game);
+            game = setInterval(drawGame, gameSpeed);
+        }
+
+    });
+});
