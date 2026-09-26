@@ -55,7 +55,7 @@ let highScore =
     Number(localStorage.getItem("snakeHighScore")) || 0;
 
 let game;
-let gameSpeed = 120;
+let gameSpeed = 160;
 
 let gameRunning = false;
 let paused = false;
@@ -123,7 +123,7 @@ function startGame() {
 
     score = 0;
 newHighScore.classList.add("hidden");
-    gameSpeed = 120;
+    gameSpeed = 160;
 
     gameRunning = true;
 
